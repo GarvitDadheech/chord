@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "Chord",
+    "slug": "chord-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "newArchEnabled": true,
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#1DB954"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.chord.app",
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Chord needs your location to find matches nearby."
+      }
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#1DB954"
+      },
+      "edgeToEdgeEnabled": true,
+      "package": "com.chord.app",
+      "permissions": [
+        "ACCESS_FINE_LOCATION",
+        "ACCESS_COARSE_LOCATION"
+      ]
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "scheme": "chord",
+    "plugins": [
+      [
+        "expo-location",
+        {
+          "locationAlwaysAndWhenInUsePermission": "Chord needs your location to find matches nearby."
+        }
+      ]
+    ]
+  }
+}
